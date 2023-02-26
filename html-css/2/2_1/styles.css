@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+
+.background {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  background-image: url("./img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  filter: blur(8px);
+  transition: filter 0.3s, transform 0.3s;
+  cursor: pointer;
+  user-select: none;
+  margin: auto;
+}
+
+.background:hover {
+  filter: blur(0px);
+}
+
+.background:active {
+  transform: scale(0.9);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px 24px;
+  height: 100%;
+}
+
+.content p {
+  line-height: 1.5;
+}
